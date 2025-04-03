@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itdoch1 | Ciberseguridad</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #00ffd5;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .console-text {
+      font-size: 2rem;
+      white-space: nowrap;
+      border-right: 3px solid #00ffd5;
+      width: 22ch;
+      overflow: hidden;
+      animation: typing 3s steps(22), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 22ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .phrase {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #00bfff;
+      font-style: italic;
+    }
+
+    .bio {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #00ffd5;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <div class="console-text">Bienvenido, itdoch1</div>
+  <div class="phrase">"When opportunity comes, it’s too late to prepare." — John Wooden</div>
+  <div class="bio">Estudiante de Ciberseguridad</div>
+  <div class="links">
+    <a href="https://github.com/itdoch1" target="_blank">GitHub</a>
+  </div>
+</body>
+</html>
