@@ -24,6 +24,12 @@
       color: #00ffd5;
     }
 
+    header .badge-label {
+      font-size: 1rem;
+      margin-top: 5px;
+      color: #ccc;
+    }
+
     header p {
       font-size: 1.2rem;
       color: #00bfff;
@@ -42,10 +48,10 @@
       background: #000;
     }
 
-    iframe {
+    .badge-container img {
       width: 100%;
       height: 100%;
-      border: none;
+      object-fit: cover;
     }
 
     .welcome {
@@ -88,9 +94,10 @@
 <body>
   <header>
     <h1>itdoch1</h1>
+    <div class="badge-label">TryHackMe - Level 444675</div>
     <p>"When opportunity comes, it’s too late to prepare." — John Wooden</p>
     <div class="badge-container">
-      <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3892483"></iframe>
+      <img src="avatar.png" alt="Avatar Badge">
     </div>
   </header>
 
