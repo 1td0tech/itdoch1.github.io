@@ -14,6 +14,27 @@
       text-align: center;
     }
 
+    nav.navbar {
+      background: #000;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav.navbar a {
+      color: #00ffd5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav.navbar a:hover {
+      color: #00bfff;
+    }
+
     header {
       padding: 60px 20px 30px;
     }
@@ -92,21 +113,43 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <a href="#home">Inicio</a>
+    <a href="#ctf">CTF</a>
+    <a href="https://github.com/itdoch1" target="_blank">GitHub</a>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
     <h1>itdoch1</h1>
     <div class="badge-container">
       <img src="avatar.png" alt="Avatar Badge">
     </div>
-   <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3892483" style='border:none;'></iframe>
+    <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3892483" style='border:none;'></iframe>
     <p>"When opportunity comes, it’s too late to prepare." — John Wooden</p>
-    
   </header>
 
+  <!-- Bienvenida -->
   <section class="welcome">
     <h2>WELCOME TO MY SITE!</h2>
     <p>Soy estudiante de Ciberseguridad apasionado por el hacking ético y la protección de sistemas. Me encanta aprender nuevas técnicas y herramientas para mejorar la seguridad en el mundo digital.</p>
   </section>
 
+  <!-- Sección CTF -->
+  <section id="ctf" class="welcome">
+    <h2>DESAFÍOS CTF</h2>
+    <p>Me encanta resolver retos de hacking en plataformas como TryHackMe. Aquí comparto algunos de los más memorables:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>🕵️‍♂️ <strong>Agent Sudo</strong> – Escalada de privilegios y análisis forense.</li>
+      <li>💻 <strong>Mr. Robot</strong> – WordPress, enumeración, exploits manuales.</li>
+      <li>🔍 <strong>Blue</strong> – Exploit EternalBlue y explotación SMB.</li>
+      <li>🧠 <strong>Pickle Rick</strong> – Retos sencillos y divertidos, ideal para empezar.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="links">
       <a href="https://github.com/itdoch1" target="_blank">GitHub</a>
